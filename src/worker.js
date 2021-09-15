@@ -4,7 +4,7 @@ import Promise from 'promise';
 function init(config) {
   const db = new MySql({
     ...config,
-    connectionLimit: 1,
+    connectionLimit: 100,
   });
   const results = [];
   return message => {
